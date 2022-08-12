@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Statistics &#8211; GMBS Consulting</title>
+	<atom:link href="/tag/statistics/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Insight Management</description>
+	<lastBuildDate>Mon, 30 Mar 2020 14:46:12 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2020/01/cropped-logo-5-32x32.png</url>
+	<title>Statistics &#8211; GMBS Consulting</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Social Distancing and Infection Risk</title>
+		<link>/social-distancing-and-infection-risk/</link>
+		
+		<dc:creator><![CDATA[llameadrpc]]></dc:creator>
+		<pubDate>Mon, 30 Mar 2020 14:46:12 +0000</pubDate>
+				<category><![CDATA[COVID-19]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<guid isPermaLink="false">/?p=127</guid>
+
+					<description><![CDATA[How would you like some real numbers as to how social distancing affects your risk of infection? Here you are.]]></description>
+										<content:encoded><![CDATA[
+<p>How would you like some real numbers as to how social distancing affects your risk of infection? Here you are.</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="763" height="382" src="/wp-content/uploads/2020/03/Binomial_interaction.png" alt="" class="wp-image-128" srcset="/wp-content/uploads/2020/03/Binomial_interaction.png 763w, /wp-content/uploads/2020/03/Binomial_interaction-300x150.png 300w" sizes="(max-width: 706px) 89vw, (max-width: 767px) 82vw, 740px" /></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

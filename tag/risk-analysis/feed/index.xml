@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>risk analysis &#8211; GMBS Consulting</title>
+	<atom:link href="/tag/risk-analysis/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Insight Management</description>
+	<lastBuildDate>Thu, 12 Mar 2020 01:15:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2020/01/cropped-logo-5-32x32.png</url>
+	<title>risk analysis &#8211; GMBS Consulting</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Being sick can cost you your life</title>
+		<link>/being-sick-can-cost-you-your-life/</link>
+		
+		<dc:creator><![CDATA[llameadrpc]]></dc:creator>
+		<pubDate>Thu, 12 Mar 2020 01:12:26 +0000</pubDate>
+				<category><![CDATA[COVID-19]]></category>
+		<category><![CDATA[risk analysis]]></category>
+		<guid isPermaLink="false">/?p=112</guid>
+
+					<description><![CDATA[How much of the age-associated risk of death due to COVID-19 can be explained by comorbid diseases, such as hypertension (HTN), diabetes (DM), cardiovascular disease (CVD), and chronic obstructive pulmonary disease (COPD)? All of it, it seems.]]></description>
+										<content:encoded><![CDATA[
+<p>How much of the age-associated risk of death due to COVID-19 can be explained by comorbid diseases, such as hypertension (HTN), diabetes (DM), cardiovascular disease (CVD), and chronic obstructive pulmonary disease (COPD)? All of it, it seems. </p>
+
+
+
+<div class="wp-block-file"><a href="/wp-content/uploads/2020/03/Being-Sick-Can-Cost-You-Your-Life.pdf">Being-Sick-Can-Cost-You-Your-Life</a><a href="/wp-content/uploads/2020/03/Being-Sick-Can-Cost-You-Your-Life.pdf" class="wp-block-file__button" download>Download</a></div>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

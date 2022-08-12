@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Public Health &#8211; GMBS Consulting</title>
+	<atom:link href="/category/public-health/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Insight Management</description>
+	<lastBuildDate>Mon, 06 Apr 2020 22:22:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.1</generator>
+
+<image>
+	<url>/wp-content/uploads/2020/01/cropped-logo-5-32x32.png</url>
+	<title>Public Health &#8211; GMBS Consulting</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Percent Insured in Shelby County (2018)</title>
+		<link>/percent-insured-in-shelby-county-2018/</link>
+		
+		<dc:creator><![CDATA[llameadrpc]]></dc:creator>
+		<pubDate>Mon, 06 Apr 2020 22:22:42 +0000</pubDate>
+				<category><![CDATA[Poverty]]></category>
+		<category><![CDATA[Public Health]]></category>
+		<guid isPermaLink="false">/?p=139</guid>
+
+					<description><![CDATA[from the 2018 5-year American Community Survey &#8211; Census Bureau]]></description>
+										<content:encoded><![CDATA[
+<p>from the 2018 5-year American Community Survey &#8211; Census Bureau</p>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="724" src="/wp-content/uploads/2020/04/shelby_insured-1024x724.png" alt="Percent Insured in Shelby County" class="wp-image-137"/></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
