@@ -146,7 +146,7 @@
 	function supportsInlineSVG() {
 		var div = document.createElement( 'div' );
 		div.innerHTML = '<svg/>';
-		return 'http://www.w3.org/2000/svg' === ( 'undefined' !== typeof SVGRect && div.firstChild && div.firstChild.namespaceURI );
+		return 'https://www.w3.org/2000/svg' === ( 'undefined' !== typeof SVGRect && div.firstChild && div.firstChild.namespaceURI );
 	}
 
 	/**
@@ -158,7 +158,7 @@
 
 	/*
 	 * Test if background-attachment: fixed is supported.
-	 * @link http://stackoverflow.com/questions/14115080/detect-support-for-background-attachment-fixed
+	 * @link https://stackoverflow.com/questions/14115080/detect-support-for-background-attachment-fixed
 	 */
 	function supportsFixedBackground() {
 		var el = document.createElement('div'),

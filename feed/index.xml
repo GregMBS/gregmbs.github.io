@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:content="https://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="https://wellformedweb.org/CommentAPI/"
+	xmlns:dc="https://purl.org/dc/elements/1.1/"
+	xmlns:atom="https://www.w3.org/2005/Atom"
+	xmlns:sy="https://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="https://purl.org/rss/1.0/modules/slash/"
 	>
 
 <channel>
@@ -105,7 +105,7 @@
 
 
 
-<p><a href="http://bit.ly/2020MemphisPoverty">http://bit.ly/2020MemphisPoverty</a></p>
+<p><a href="https://bit.ly/2020MemphisPoverty">https://bit.ly/2020MemphisPoverty</a></p>
 ]]></content:encoded>
 					
 		
@@ -180,13 +180,13 @@
 				<category><![CDATA[COVID-19]]></category>
 		<guid isPermaLink="false">/?p=132</guid>
 
-					<description><![CDATA[This website shows up-to-date graphs of cases and deaths from COVID-19 on a state-by-state basis. http://uscovid.gmbs-consulting.com/ Many thanks to The New York Times for providing the data and to Digital Ocean for providing the server space.]]></description>
+					<description><![CDATA[This website shows up-to-date graphs of cases and deaths from COVID-19 on a state-by-state basis. https://uscovid.gmbs-consulting.com/ Many thanks to The New York Times for providing the data and to Digital Ocean for providing the server space.]]></description>
 										<content:encoded><![CDATA[
 <p>This website shows up-to-date graphs of cases and deaths from COVID-19 on a state-by-state basis.</p>
 
 
 
-<p> <a href="http://uscovid.gmbs-consulting.com/">http://uscovid.gmbs-consulting.com/</a></p>
+<p> <a href="https://uscovid.gmbs-consulting.com/">https://uscovid.gmbs-consulting.com/</a></p>
 
 
 
