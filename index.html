@@ -47,9 +47,9 @@ img.emoji {
 <![endif]-->
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script>$(function() {
+<script>jQuery(function() {
 	// Create the modal
-	var modal = $('<div class="modal">');
+	var modal = jQuery('<div class="modal">');
   
 	// Add the content to the modal
 	modal.append('<h1>Unlocking Opportunities: I am Ready for Your Team!</h1>');
@@ -61,7 +61,7 @@ img.emoji {
 	modal.append('<p>Contact Information: <br/><a href="mailto:greg@gmbs-consulting.com">greg@gmbs-consulting.com</a></p>');
   
 	// Add the modal to the body
-	$('body').append(modal);
+	jQuery('body').append(modal);
   
 	// Show the modal
 	modal.modal('show');
