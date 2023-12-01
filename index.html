@@ -237,6 +237,26 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
 <script src="/wp-content/themes/twentyseventeen/assets/js/global.js?ver=20190121" id="twentyseventeen-global-js"></script>
 <script src="/wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo.js?ver=2.1.2" id="jquery-scrollto-js"></script>
 <script src="/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.10.3" id="smush-lazy-load-js"></script>
+<script>jQuery(document).ready(function() {
+	// Create the modal
+	var splash = jQuery('<div class="modal">');
+  
+	// Add the content to the modal
+	splash.append('<h1>Unlocking Opportunities: I am Ready for Your Team!</h1>');
+	splash.append('<h2>Gregory M. Blumenthal - Experienced Data Professional Ready to Elevate Your Organization');
+	splash.append('<p>I am excited to announce my availability for new career opportunities.</p>');
+	splash.append('<p>Why Consider Me:</p>');
+	splash.append('<ul><li>Statistical programmer</li><li>GIS developer</li><li>Linux system administrator</li><li>Database developer and administrator</li><li>Business process analyst</li></ul>');
+	splash.append('<p>Let@quote;s Connect:<br/>I am eager to bring my skills and expertise to a dynamic team. If you are looking for a data science abd buisiness policy expert, let@quote;s connect! Feel free to explore my <a href="https://www.linkedin.com/in/gm-blumenthal-scharf/">LinkedIn profile</a> to learn more about my background.</p>');
+	splash.append('<p>Contact Information: <br/><a href="mailto:greg@gmbs-consulting.com">greg@gmbs-consulting.com</a></p>');
+  
+	// Add the modal to the body
+	jQuery('body').append(splash);
+  
+	// Show the modal
+	splash.modal('show');
+  });
+  </script>
 <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-behance" viewbox="0 0 37 32">
@@ -400,24 +420,4 @@ var twentyseventeenScreenReaderText = {"quote":"<svg class=\"icon icon-quote-rig
 </defs>
 </svg>
 </body>
-<script>jQuery(function() {
-	// Create the modal
-	var splash = jQuery('<div class="modal">');
-  
-	// Add the content to the modal
-	splash.append('<h1>Unlocking Opportunities: I am Ready for Your Team!</h1>');
-	splash.append('<h2>Gregory M. Blumenthal - Experienced Data Professional Ready to Elevate Your Organization');
-	splash.append('<p>I am excited to announce my availability for new career opportunities.</p>');
-	splash.append('<p>Why Consider Me:</p>');
-	splash.append('<ul><li>Statistical programmer</li><li>GIS developer</li><li>Linux system administrator</li><li>Database developer and administrator</li><li>Business process analyst</li></ul>');
-	splash.append('<p>Let@quote;s Connect:<br/>I am eager to bring my skills and expertise to a dynamic team. If you are looking for a data science abd buisiness policy expert, let@quote;s connect! Feel free to explore my <a href="https://www.linkedin.com/in/gm-blumenthal-scharf/">LinkedIn profile</a> to learn more about my background.</p>');
-	splash.append('<p>Contact Information: <br/><a href="mailto:greg@gmbs-consulting.com">greg@gmbs-consulting.com</a></p>');
-  
-	// Add the modal to the body
-	jQuery('body').append(splash);
-  
-	// Show the modal
-	splash.modal('show');
-  });
-  </script>
 </html>
