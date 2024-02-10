@@ -43,6 +43,10 @@ body {
             width: 8px;
         }
     }
+    .navbar-item img {
+        max-height: 4.5rem;
+    }
+    min-height: 6rem;
 }
 
 .is-active {
@@ -71,4 +75,16 @@ hr {
             text-decoration: underline;
         }
     }
+}
+
+em {
+    color: rgb(255, 192, 0)
+}
+
+.site-title::before {
+    content: url("/assets/images/logo.png");
+    display: inline-block;
+    position: relative;
+    width: 37px;
+    top: 5px;
 }
