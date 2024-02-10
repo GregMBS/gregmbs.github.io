@@ -4,12 +4,12 @@ markdown: kramdown
 # URL of the Site
 url: ''
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl:  https://www.gmbs-consulting.com/
 
 # Title of the Site
 title: GMBS Consulting
 # Description of the Site
-description: Insight Management
+description: Making REAL Sense of Your Data
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -71,15 +71,16 @@ defaults:
   -
     scope:
       type: 'posts'
+      path: ''
     values:
       layout: post
       post-image: ""
       description: ""
-      tags:
-        - ""
+      tags: []
   -
     scope:
       type: 'pages'
+      path: ''
     values:
       layout: page
 
