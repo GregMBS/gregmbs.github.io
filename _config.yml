@@ -7,9 +7,9 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: What A Theme
+title: GMBS Consulting
 # Description of the Site
-description: A customizable Jekyll portfolio theme
+description: Insight Management
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -18,36 +18,36 @@ site-keywords: Site, Template, Theme
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+heroimage: '/assets/images/cropped-wordcloud.png'
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
-facebook_username: thedevslot
-twitter_username: thedevslot
-instagram_username: thedevslot
-linkedin_username: thedevslot
-github_username:  thedevslot
-youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
+email: calldrpc@gmbs-consulting.com
+facebook_username: gblumenthalscharf
+twitter_username: /
+instagram_username: /
+linkedin_username: gm-blumenthal-scharf
+github_username:  GregMBS
+youtube_channel_id: /
 reddit_username: /
 behance_username: /
 dribbble_username: /
 spotify_username: /
 
 # Google Analytics
-google-analytics: UA-163806439-1
+google-analytics: /
 
 # Disqus
-disqus-shortname: thedevslot
+disqus-shortname: /
 
 # Name of the Author
-author-name: TheDevsLot
+author-name: Greg Blumenthal
 # URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
+author-image: https://media.licdn.com/dms/image/D4E35AQEUMg3B0SuOPw/profile-framedphoto-shrink_400_400/0/1697030658434?e=1708120800&amp;v=beta&amp;t=5b2P5B0kdXwj7E8c6S_31LykQCBTjIwVeg0gposieCU
 # 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
-# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+author-about: I solve business problems with integrated data solutions.
+# URL to the Author's Profile (i.e., GitHub, Twitter, Stackoverflow, etc)
+author-url: https://github.com/GregMBS
 
 # SASS
 sass:
