@@ -1,7 +1,7 @@
 ---
 title: Memphis Poverty Fact Sheet – 2024
 layout: post
-post-image: /assets/images/2022MPFS.PNG
+post-image: /assets/images/2024MPFS.PNG
 description: Memphis Poverty Fact Sheet – 2024
 tags:
 - Memphis Poverty Fact Sheet
