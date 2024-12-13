@@ -1,33 +1,47 @@
 ---
-layout: service
-title: Services
+layout: compress
 ---
 
-<div class="services-page">
-  <header class="page-header">
-    <h1>{{ page.title }}</h1>
-    <p>Explore our range of services designed to meet your needs.</p>
-  </header>
+<!DOCTYPE html>
+<html>
 
-  <section class="service-section">
-    <h2>GMBS Consulting</h2>
-    <ul>
-      <li>Mapping Services</li>
-      <li>Redistricting Services</li>
-      <li>Voter Analysis and Targeting</li>
-      <li>Business Targeting Services</li>
-      <li>Census Data Sets & Analysis</li>
-    </ul>
-  </section>
+<head>
+  {% include head.html %}
+</head>
 
-  <section class="service-section">
-    <h2 class="remoting-work">remoting.work</h2>
-    <p></p>
-  </section>
+<body>
+  {% include navbar.html %}
 
-  <section class="service-section">
-    <h2 class="security-tapestry">Security Tapestry</h2>
-    <p></p>
-  </section>
+  <div class="services-page">
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+      <p>Explore our range of services designed to meet your needs.</p>
+    </header>
 
-</div>
+    <section class="service-section">
+      <h2>GMBS Consulting</h2>
+      <ul>
+        <li>Mapping Services</li>
+        <li>Redistricting Services</li>
+        <li>Voter Analysis and Targeting</li>
+        <li>Business Targeting Services</li>
+        <li>Census Data Sets & Analysis</li>
+      </ul>
+    </section>
+
+    <section class="service-section">
+      <h2 class="remoting-work">remoting.work</h2>
+      <p></p>
+    </section>
+
+    <section class="service-section">
+      <h2 class="security-tapestry">Security Tapestry</h2>
+      <p></p>
+    </section>
+
+  </div>
+  <!--Footer begins here-->
+  {% include footer.html %}
+</body>
+
+</html>
