@@ -367,6 +367,15 @@ a.navbar-item.is-active {
     font-size-adjust: 1.5;
 }
 
+.service-section dl {
+    margin: 1em
+}
+
+.service-section dt {
+    font-size-adjust: 1.25;
+    font-weight: 200;
+}
+
 .remoting-work {
     font-family: "Epilogue", "Poppins", serif;
     font-optical-sizing: auto;
