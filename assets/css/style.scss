@@ -367,13 +367,14 @@ a.navbar-item.is-active {
     font-size-adjust: 1.5;
 }
 
-.service-section dl {
+.service-section dl * {
     margin: 1em
 }
 
 .service-section dt {
     font-size-adjust: 1.25;
     font-weight: 200;
+    margin: 1em;
 }
 
 .remoting-work {
