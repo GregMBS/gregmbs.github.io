@@ -89,6 +89,87 @@ em {
     top: 5px;
 }
 
+/* Service Overview */
+
+.service-overview {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Our Services */
+
+.our-services {
+    padding: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2 {
+    margin-bottom: 10px;
+}
+
+/* Expertise */
+
+.expertise ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.expertise li {
+    color: #333;
+}
+
+/* Why Choose GMBS-Consulting? */
+
+.why-choose {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+}
+
+.why-choose img {
+    width: 100%;
+    height: auto;
+}
+
+.service-section {
+    font-family: "Poppins", serif;
+    clear: both
+}
+
+.service-section h2 {
+    font-size-adjust: 2;
+}
+
+.service-section h3 {
+    font-size-adjust: 1.5;
+}
+
+.remoting-work {
+    font-family: "Epilogue", "Poppins", serif;
+    font-optical-sizing: auto;
+}
+
+.security-tapestry {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
 #about-text h1 {
     font-weight: bold;
     font-size: 200%;
