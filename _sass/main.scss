@@ -60,6 +60,18 @@ body {
 .columns {
     .button {
         margin: 0.5rem !important;
+        display: inline-block;
+        padding: 12px 24px; /* Increased padding */
+        font-size: 16px; /* Larger font size */
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #007bff; /* Your preferred button color */
+        color: white;
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .button:hover {
+        background-color: #0056b3; /* Darker shade on hover */
     }
 }
 
@@ -91,6 +103,8 @@ em {
     position: relative;
     width: 37px;
     top: 5px;
+    margin-top: 20px;  /* Reduced top margin */
+    margin-bottom: 20px; /* Reduced bottom margin */
 }
 
 /* Service Overview */

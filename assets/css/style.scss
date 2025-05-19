@@ -13,6 +13,11 @@
     src: url('../fonts/Inter-VariableFont_opsz.ttf')  format('truetype')
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
 #navbar {
     opacity: 0.95;
 }
@@ -91,6 +96,12 @@ a.navbar-item.is-active {
     a {
         min-width: 25vmax;
         margin: 0.5rem;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
     }
 }
 
