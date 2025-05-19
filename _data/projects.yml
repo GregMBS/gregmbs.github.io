@@ -1,8 +1,16 @@
-- name: United States COVID-19 Graphs
-  image: /assets/images/USCOVID.png
-  link: https://uscovid.gmbs-consulting.com
-  description: US States COVID-19 Graphs produced from data provided by the NY Times and funded by a generous grant from DigitalOcean
+- name: Strategic Development at remoting.work
+  image: /assets/images/remoting.png
+  link: https://remoting.work
+  description: Shaping the future of remote work platforms.
+- name: International Sales for Security Tapestry
+  image: /assets/images/security-tapestry.png
+  link: https://securitytapestry.com
+  description: Expanding cybersecurity solutions across continents.
+- name: Political Campaign Analytics
+  image: /assets/images/political-campaign.png
+  link: https://politicalcampaignanalytics.com 
+  description: Turning data into winning strategies.
 - name: Memphis Poverty Fact Sheet
-  link: https://www.gmbs-consulting.com/mpfs/
-  image: /assets/images/MPFS.png
-  description: The website of the Memphis Poverty Fact Sheet, produced annually by Dr. Elena Delavega of the School of Social Work at the University of Memphis, and Dr. Gregory M. Blumenthal of GMBS Consulting. Data from the American Community Survey.
+  image: /assets/images/memphis-poverty.png
+  link: https://www.www.gmbs-consulting.com/mpfs
+  description: A comprehensive annual analysis of poverty in Memphis.
