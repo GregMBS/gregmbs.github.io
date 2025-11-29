@@ -1,11 +1,3 @@
-- name: Strategic Development at remoting.work
-  image: /assets/images/remoting.png
-  link: https://remoting.work
-  description: Shaping the future of remote work platforms.
-- name: International Sales for Security Tapestry
-  image: /assets/images/security-tapestry.png
-  link: https://securitytapestry.com
-  description: Expanding cybersecurity solutions across continents.
 - name: Memphis Poverty Fact Sheet
   image: /assets/images/memphis-poverty.png
   link: https://www.gmbs-consulting.com/mpfs
