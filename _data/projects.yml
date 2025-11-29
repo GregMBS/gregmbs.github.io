@@ -6,11 +6,7 @@
   image: /assets/images/security-tapestry.png
   link: https://securitytapestry.com
   description: Expanding cybersecurity solutions across continents.
-- name: Political Campaign Analytics
-  image: /assets/images/political-campaign.png
-  link: https://politicalcampaignanalytics.com 
-  description: Turning data into winning strategies.
 - name: Memphis Poverty Fact Sheet
   image: /assets/images/memphis-poverty.png
-  link: https://www.www.gmbs-consulting.com/mpfs
+  link: https://www.gmbs-consulting.com/mpfs
   description: A comprehensive annual analysis of poverty in Memphis.
