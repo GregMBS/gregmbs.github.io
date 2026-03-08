@@ -8,8 +8,8 @@
 <title>{{site.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
 
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
-<meta name="og:description" content="{% unless page.layout == 'post' %}{{site.description}}{% else %}{{page.description}}{% endunless %}">
+<meta name="og:title" content="{{page.title | default: site.title }}">
+<meta name="og:description" content="{{ page.description | default: site.description}}">
 <meta name="og:image" content="{% unless page.layout == 'post' %}{{site.site-image}}{% else %}{{page.post-image}}{% endunless %}">
 <meta name="og:image:alt" content="{{site.title}}{% if page.title %} | {{page.title}}{% endif %}">
 <meta name="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}">
