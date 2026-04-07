@@ -4,8 +4,6 @@ layout: page
 permalink: /political/
 ---
 
-# Political Campaign Services
-
 ## Precision Mapping for Campaigns That Need to Win
 
 Close elections are decided by turnout. Turnout is decided by where 
@@ -13,7 +11,7 @@ you knock doors, who you call, and how efficiently your volunteers
 cover the ground. That is a data problem — and data problems are 
 what GMBS Consulting solves.
 
----
+<hr>
 
 ## Services for Campaigns and Party Organizations
 
@@ -45,7 +43,7 @@ Real-time or post-election precinct returns mapped and modeled.
 Understand exactly where your votes came from — and where they 
 didn't.
 
----
+<hr>
 
 ## Why GMBS Consulting
 
@@ -70,7 +68,7 @@ explainable. You will understand what the data says and why —
 because your campaign manager needs to defend those decisions at 
 3am on election eve.
 
----
+<hr>
 
 ## 2026 General Election
 
