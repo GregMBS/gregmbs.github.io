@@ -1,65 +1,96 @@
-# WhatATheme
+# Minimal Mistakes
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: contrast
+
 markdown: kramdown
 
-# URL of the Site
+# Site
 url: ''
-# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: ''
 
-# Title of the Site
 title: GMBS Consulting
-# Logo of the Site
+title_separator: "|"
+subtitle: Precision Geospatial Analysis, Statistical Modeling, and Political Consulting
+description: Precision Geospatial Analysis, Statistical Modeling, and Political Consulting
 logo: '/assets/images/logo.png'
-# Description of the Site
-description: Precision Geospatial Analysis & Statistical Modeling
-# URL of Image of the Site
-site-image: /WhatATheme/assets/images/meta.jpg
-# Keywords of the Site
-site-keywords: Site, Template, Theme
-# URL for the Image of custom Favicon
-favicon-url: 
 
-# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: '/assets/images/cropped-wordcloud.png'
+# Social sharing / SEO
+og_image: '/assets/images/cropped-wordcloud.png'
 
-# Social Media and Contact
-# If you don't want to use any icon, you can leave them blank.
-email: calldrpc@gmbs-consulting.com
-facebook_username: gblumenthalscharf
-twitter_username: 
-instagram_username: 
-linkedin_username: gm-blumenthal-scharf
-github_username:  GregMBS
-youtube_channel_id: 
-reddit_username: 
-behance_username: 
-dribbble_username: 
-spotify_username: 
+# Author
+author:
+  name: Greg Blumenthal
+  avatar: '/assets/images/GMB.png'
+  bio: >
+    Gregory M. Blumenthal, PhD, obtained his B.A. in Chemistry from Vanderbilt
+    University and his doctorate in Pharmacology from Duke University. He has
+    produced a body of work of enormous depth and breadth, encompassing research
+    in toxicology, risk analysis, secure financial web applications, and other
+    data science projects for such agencies as NIH, EPA, the VA, and NASA (from
+    whom he received an award in 2014). His presentation developing objective
+    criteria for PBPK models was expanded into the 2006 US EPA criteria for
+    application of PBPK models to risk assessment. His specific contributions to
+    the realm of statistical analysis continue to influence scientific analysis
+    to this day. The August 2018 US FDA Guidance for acceptance of PBPK models
+    in support of drug evaluations was based upon this US EPA document.
+    Dr. Blumenthal's strongest area of expertise is data science and data
+    analysis, providing quantitative evaluation and GIS consulting services to
+    Memphis-area nonprofits, government agencies, and political campaigns.
+  location: Memphis, TN
+  email: calldrpc@gmbs-consulting.com
+  links:
+    - label: Email
+      icon: fas fa-fw fa-envelope-square
+      url: mailto:calldrpc@gmbs-consulting.com
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/GregMBS
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/gm-blumenthal-scharf
+    - label: Facebook
+      icon: fab fa-fw fa-facebook-square
+      url: https://www.facebook.com/gblumenthalscharf
+    - label: Messenger
+      icon: fab fa-fw fa-facebook-messenger
+      url: https://m.me/gblumenthalscharf
+
+# Footer links (mirrors author links or subset)
+footer:
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/GregMBS
+    - label: LinkedIn
+      icon: fab fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/gm-blumenthal-scharf
 
 # Google Analytics
-google-analytics: G-WN4ZS6ZCKF
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-WN4ZS6ZCKF
+    anonymize_ip: false
 
-# Disqus
-disqus-shortname: /
-
-# Name of the Author
-author-name: Greg Blumenthal
-# URL for the Image of the Author
-author-image: assets/images/GMB.png
-# 60 Words About the Author
-author-about: Gregory M. Blumenthal, PhD, obtained his B.A. in Chemistry from Vanderbilt University and his doctorate in Pharmacology from Duke University. He has produced a body of work of enormous depth and breadth, encompassing research in toxicology, risk analysis, secure financial web applications, and other data science projects for such agencies as NIH, EPA, the VA, and NASA (from whom he received an award in 2014). His presentation developing objective criteria for PBPK models was expanded into the 2006 US EPA criteria for application of PBPK models to risk assessment. His specific contributions to the realm of statistical analysis continue to influence scientific analysis to this day. The August 2018 US FDA Guidance for acceptance of PBPK models in support of drug evaluations was based upon this US EPA document. Dr. Blumenthal’s strongest area of expertise is data science and data analysis, providing quantitative evaluation and GIS consulting services to Memphis-area nonprofits, government agencies, and political campaigns.
-# URL to the Author's Profile (i.e., GitHub, Twitter, Stackoverflow, etc)
-author-url: https://github.com/GregMBS
+# Comments (Disqus — set shortname if/when you have a real one)
+comments:
+  provider: false
+  # provider: disqus
+  # disqus:
+  #   shortname: your-disqus-shortname
 
 # SASS
 sass:
   sass_dir: _sass
   style: compressed
 
-# Build settings
+# Plugins
 plugins:
   - jekyll-admin
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache
 
 # Permalink
 permalink: "project/:title"
@@ -70,21 +101,23 @@ compress_html:
 
 # Defaults
 defaults:
-  -
-    scope:
-      type: 'posts'
+  # Posts
+  - scope:
       path: ''
+      type: posts
     values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags: []
-  -
-    scope:
-      type: 'pages'
+      layout: single
+      author_profile: true
+      read_time: true
+      share: false
+      related: true
+  # Pages
+  - scope:
       path: ''
+      type: pages
     values:
-      layout: page
+      layout: single
+      author_profile: false
 
 # Exclude
 exclude:
