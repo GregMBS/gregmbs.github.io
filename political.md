@@ -1,6 +1,6 @@
 ---
 title: Political Campaign Services
-layout: page
+layout: service
 permalink: /political/
 ---
 
@@ -16,29 +16,34 @@ what GMBS Consulting solves.
 ## Services for Campaigns and Party Organizations
 
 ### Canvassing and Field Maps
+
 Precinct-level canvassing maps built around your actual voter file. 
 Walk lists and territory assignments optimized for volunteer 
 efficiency. Delivered in print-ready and digital formats your field 
 staff can use on day one.
 
 ### Voter Turnout Analysis
+
 Who voted, who didn't, and why it matters for your district. 
 Demographic and geographic breakdowns of historical turnout patterns 
 to identify your low-hanging fruit and your persuasion targets.
 
 ### Redistricting Analysis
+
 Independent analysis of district boundaries for legislative, 
 congressional, and local races. Competitive district identification, 
 population deviation analysis, and minority voting rights assessment. 
 Useful for campaigns, legal teams, and advocacy organizations.
 
 ### District Competitiveness Modeling
+
 Quantitative modeling of district-level competitiveness based on 
 historical voting patterns, demographic shifts, and registration 
 trends. Know before you spend where your resources will move the 
 needle.
 
 ### Election Night and Post-Election Analysis
+
 Real-time or post-election precinct returns mapped and modeled. 
 Understand exactly where your votes came from — and where they 
 didn't.
