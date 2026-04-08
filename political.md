@@ -1,6 +1,6 @@
 ---
 title: Political Campaign Services
-layout: service
+layout: page
 permalink: /political/
 ---
 
