@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gem "github-pages", "~> 232", group: :jekyll_plugins
 gem "rack", "~> 2.2"
 gem "webrick", "~> 1.8"
+gem "csv"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
