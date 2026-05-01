@@ -60,6 +60,7 @@ sass:
 plugins:
   - jekyll-admin
   - jekyll-feed
+  - jekyll-paginate-v2
 
 # Permalink
 permalink: "project/:title"
