@@ -435,25 +435,27 @@
         <p>Every engagement starts with a conversation. Tell us what you're working with and what you're trying to accomplish — and we'll tell you honestly whether we're the right fit.</p>
         <p class="contact-form-note">Typical response time: within one business day.</p>
 
-        <div style="margin-top:2rem">
+        <form action="https://formspree.io/f/xnjrgnyw" method="POST" style="margin-top:2rem">
           <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" placeholder="Jane Smith">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
           </div>
           <div class="form-group">
-            <label>Organization</label>
-            <input type="text" placeholder="Acme Corp / Memphis Community Foundation / etc.">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" placeholder="Acme Corp / Memphis Community Foundation / etc.">
           </div>
           <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="jane@example.com">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
           </div>
           <div class="form-group">
-            <label>What are you trying to solve?</label>
-            <textarea placeholder="Briefly describe your data challenge or what kind of help you're looking for..."></textarea>
+            <label for="message">What are you trying to solve?</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your data challenge or what kind of help you're looking for..."></textarea>
           </div>
-          <button class="btn-submit">Send Message</button>
-        </div>
+          <!-- Honeypot spam filter -->
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
       </div>
       <div class="contact-info">
         <div class="section-label">Direct Contact</div>
