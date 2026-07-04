@@ -7,6 +7,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "kramdown-parser-gfm"
 gem "webrick" # Required for Ruby 3+, missing from older Jekyll
 gem "csv" # Required for Ruby 3.4+, removed from default gems
+gem "bigdecimal" # Required for Ruby 3.4+, removed from default gems
 
 group :jekyll_plugins do
   gem "jekyll-feed"
