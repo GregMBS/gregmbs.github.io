@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /project
+Disallow: /blog
+Disallow: /service
+Disallow: /political
+
+Sitemap: https://www.gmbs-consulting.com/sitemap.xml

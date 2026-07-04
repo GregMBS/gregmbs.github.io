@@ -1,6 +1,8 @@
 <head>
     {% include meta.html %}
-    <title>{{site.title}}</title>
+    {% if page.layout == 'project' or page.layout == 'blog' or page.layout == 'service' or page.layout == 'post' or page.noindex %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
     <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
     <!-- Epilogue font for remoting.work 
