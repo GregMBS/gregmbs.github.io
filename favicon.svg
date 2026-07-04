@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>GMBS Consulting</title>
+  <rect width="64" height="64" rx="12" fill="#0D1B2A"/>
+  <g stroke="#FFFFFF" stroke-width="0.6" opacity="0.1">
+    <line x1="20" y1="4" x2="20" y2="60"/>
+    <line x1="44" y1="4" x2="44" y2="60"/>
+    <line x1="4" y1="20" x2="60" y2="20"/>
+    <line x1="4" y1="44" x2="60" y2="44"/>
+  </g>
+  <path d="M 43 23 A 15 15 0 1 0 45 30 L 34 30"
+        fill="none" stroke="#E8A020" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="43" cy="23" r="3" fill="#E8A020"/>
+</svg>

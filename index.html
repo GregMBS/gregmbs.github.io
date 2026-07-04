@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GMBS Consulting — Data Science & Strategic Analytics</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --navy: #0f1e2e;
+    --navy2: #162436;
+    --teal: #1a7f8e;
+    --teal-light: #22a0b2;
+    --gold: #c8962a;
+    --light: #f4f6f8;
+    --mid: #8a9bb0;
+    --text: #1e2d3d;
+    --white: #ffffff;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Georgia', serif; color: var(--text); background: var(--white); }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { color: var(--teal-light); }
+
+  /* NAV */
+  nav {
+    background: var(--navy);
+    padding: 1.1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .nav-logo { color: var(--white); font-size: 1.1rem; letter-spacing: .08em; font-family: sans-serif; font-weight: 700; }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { color: var(--mid); font-family: sans-serif; font-size: .9rem; letter-spacing: .05em; text-transform: uppercase; transition: color .2s; }
+  .nav-links a:hover { color: var(--white); }
+
+  /* SECTIONS */
+  section { padding: 5rem 3rem; }
+  .container { max-width: 960px; margin: 0 auto; }
+  .section-label {
+    font-family: sans-serif; font-size: .75rem; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--teal); margin-bottom: 1rem;
+  }
+  h1,h2,h3 { line-height: 1.2; }
+  h1 { font-size: 2.8rem; color: var(--white); margin-bottom: 1.4rem; }
+  h2 { font-size: 2rem; color: var(--navy); margin-bottom: 1.2rem; }
+  h3 { font-size: 1.2rem; color: var(--navy); margin-bottom: .6rem; }
+  p { line-height: 1.8; margin-bottom: 1rem; color: #3a4d5e; }
+
+  /* HERO */
+  #hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 60%, #0e2840 100%);
+    padding: 7rem 3rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute; top: -80px; right: -80px;
+    width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(26,127,142,.18) 0%, transparent 70%);
+  }
+  .hero-eyebrow {
+    font-family: sans-serif; font-size: .8rem; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;
+  }
+  .hero-sub {
+    font-size: 1.2rem; color: rgba(255,255,255,.72); max-width: 620px;
+    line-height: 1.8; margin-bottom: 2.4rem;
+  }
+  .hero-cta {
+    display: inline-block; background: var(--teal); color: var(--white);
+    padding: .85rem 2rem; font-family: sans-serif; font-size: .9rem;
+    letter-spacing: .06em; border-radius: 3px; transition: background .2s;
+  }
+  .hero-cta:hover { background: var(--teal-light); color: var(--white); }
+  .hero-cta-ghost {
+    display: inline-block; border: 1px solid rgba(255,255,255,.3); color: rgba(255,255,255,.8);
+    padding: .85rem 2rem; font-family: sans-serif; font-size: .9rem;
+    letter-spacing: .06em; border-radius: 3px; margin-left: 1rem; transition: all .2s;
+  }
+  .hero-cta-ghost:hover { border-color: var(--white); color: var(--white); }
+  .hero-credentials {
+    display: flex; gap: 2.5rem; margin-top: 3.5rem; flex-wrap: wrap;
+  }
+  .cred { text-align: center; }
+  .cred-val { font-size: 1.5rem; color: var(--white); font-weight: bold; font-family: sans-serif; }
+  .cred-label { font-family: sans-serif; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--mid); margin-top: .2rem; }
+
+  /* THE PROBLEM */
+  #problem { background: var(--light); }
+  .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .problem-quote {
+    font-size: 1.4rem; line-height: 1.7; color: var(--navy);
+    border-left: 3px solid var(--gold); padding-left: 1.5rem;
+    font-style: italic;
+  }
+
+  /* SERVICES */
+  #services { background: var(--white); }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem; }
+  .service-card {
+    border: 1px solid #dde4ec; border-radius: 4px; padding: 2rem;
+    transition: box-shadow .2s, border-color .2s;
+  }
+  .service-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.08); border-color: var(--teal); }
+  .service-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+  .service-tier {
+    font-family: sans-serif; font-size: .7rem; letter-spacing: .15em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: .4rem;
+  }
+  .service-price {
+    font-family: sans-serif; font-size: .85rem; color: var(--mid);
+    margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #eee;
+  }
+  .service-card ul { padding-left: 1.2rem; color: #3a4d5e; line-height: 1.9; font-size: .95rem; }
+
+  /* ABOUT */
+  #about { background: var(--navy); }
+  #about h2 { color: var(--white); }
+  #about p { color: rgba(255,255,255,.72); }
+  .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; }
+  .about-photo-placeholder {
+    background: var(--navy2); border: 1px solid rgba(255,255,255,.1);
+    border-radius: 4px; aspect-ratio: 3/4; display: flex; align-items: center;
+    justify-content: center; color: var(--mid); font-family: sans-serif; font-size: .8rem;
+    text-align: center; padding: 1rem;
+  }
+  .credential-list { list-style: none; margin-top: 1.5rem; }
+  .credential-list li {
+    padding: .6rem 0; border-bottom: 1px solid rgba(255,255,255,.08);
+    color: rgba(255,255,255,.65); font-family: sans-serif; font-size: .9rem;
+    display: flex; align-items: center; gap: .75rem;
+  }
+  .credential-list li span.dot { color: var(--gold); font-size: 1.2rem; }
+
+  /* CASE STUDIES */
+  #work { background: var(--light); }
+  .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+  .case-card {
+    background: var(--white); border-radius: 4px; padding: 2rem;
+    border-left: 4px solid var(--teal);
+  }
+  .case-tag {
+    font-family: sans-serif; font-size: .7rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--teal); margin-bottom: .75rem;
+  }
+  .case-result {
+    background: var(--light); border-radius: 3px; padding: .75rem 1rem;
+    margin-top: 1.2rem; font-family: sans-serif; font-size: .85rem; color: var(--navy);
+  }
+  .case-result strong { color: var(--teal); }
+
+  /* POVERTY FACT SHEET */
+  #impact {
+    background: linear-gradient(135deg, #0f2233 0%, #0a3040 100%);
+    color: var(--white);
+  }
+  #impact h2 { color: var(--white); }
+  #impact p { color: rgba(255,255,255,.72); }
+  .impact-grid { display: grid; grid-template-columns: 3fr 2fr; gap: 4rem; align-items: center; }
+  .impact-stat-block { text-align: center; }
+  .impact-stat { font-size: 3rem; color: var(--gold); font-family: sans-serif; font-weight: bold; }
+  .impact-stat-label { font-family: sans-serif; font-size: .8rem; letter-spacing: .1em; color: var(--mid); text-transform: uppercase; margin-top: .3rem; }
+
+  /* CONTACT */
+  #contact { background: var(--white); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .contact-form-note { font-family: sans-serif; font-size: .85rem; color: var(--mid); margin-top: .5rem; }
+  .form-group { margin-bottom: 1.2rem; }
+  .form-group label { display: block; font-family: sans-serif; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--mid); margin-bottom: .4rem; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%; padding: .75rem 1rem; border: 1px solid #dde4ec; border-radius: 3px;
+    font-family: Georgia, serif; font-size: .95rem; color: var(--text);
+    transition: border-color .2s;
+  }
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none; border-color: var(--teal);
+  }
+  .form-group textarea { height: 120px; resize: vertical; }
+  .btn-submit {
+    background: var(--teal); color: var(--white); border: none; padding: .85rem 2rem;
+    font-family: sans-serif; font-size: .9rem; letter-spacing: .06em; border-radius: 3px;
+    cursor: pointer; transition: background .2s;
+  }
+  .btn-submit:hover { background: var(--teal-light); }
+  .contact-info h3 { margin-top: 2rem; }
+  .contact-info p { font-size: .95rem; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy); padding: 2.5rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: sans-serif; font-size: .82rem; color: var(--mid);
+    flex-wrap: wrap; gap: 1rem;
+  }
+  footer a { color: var(--mid); }
+  footer a:hover { color: var(--white); }
+
+  /* DIVIDER */
+  .gold-rule { width: 48px; height: 3px; background: var(--gold); margin: 1.2rem 0 2rem; }
+
+  @media (max-width: 760px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1rem; }
+    section { padding: 3.5rem 1.5rem; }
+    h1 { font-size: 2rem; }
+    .problem-grid, .about-grid, .services-grid, .case-grid, .contact-grid, .impact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-credentials { gap: 1.5rem; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://www.gmbs-consulting.com">
+<meta name="description" content="PhD-level data science and strategic analytics built on federal research credentials. GMBS Consulting — for organizations that can't afford to get it wrong.">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GMBS Consulting">
+<meta property="og:title" content="GMBS Consulting — Data Science & Strategic Analytics">
+<meta property="og:description" content="PhD-level data science and strategic analytics built on federal research credentials. For organizations that can't afford to get it wrong.">
+<meta property="og:url" content="https://www.gmbs-consulting.com">
+<meta property="og:image" content="https://www.gmbs-consulting.com/headshot.png">
+<!-- Twitter / LinkedIn card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GMBS Consulting — Data Science & Strategic Analytics">
+<meta name="twitter:description" content="PhD-level data science and strategic analytics built on federal research credentials. For organizations that can't afford to get it wrong.">
+<meta name="twitter:image" content="https://www.gmbs-consulting.com/headshot.png">
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.gmbs-consulting.com/#business",
+      "name": "GMBS Consulting",
+      "url": "https://www.gmbs-consulting.com",
+      "email": "greg@gmbs-consulting.com",
+      "description": "PhD-level data science and strategic analytics built on federal research credentials. For organizations that can't afford to get it wrong.",
+      "founder": { "@id": "https://www.gmbs-consulting.com/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Memphis",
+        "addressRegion": "TN",
+        "addressCountry": "US"
+      },
+      "areaServed": "Worldwide",
+      "knowsAbout": [
+        "Data Science",
+        "Strategic Analytics",
+        "Predictive Modeling",
+        "Risk Assessment",
+        "PBPK Modeling",
+        "Complex Systems Modeling"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.gmbs-consulting.com/#person",
+      "name": "Gregory M. Blumenthal",
+      "honorificSuffix": "PhD",
+      "jobTitle": "Principal",
+      "worksFor": { "@id": "https://www.gmbs-consulting.com/#business" },
+      "url": "https://www.gmbs-consulting.com",
+      "email": "greg@gmbs-consulting.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Memphis",
+        "addressRegion": "TN",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Duke University" },
+        { "@type": "CollegeOrUniversity", "name": "Vanderbilt University" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/gm-blumenthal-scharf",
+        "https://github.com/GregMBS",
+        "https://orcid.org/0009-0007-2130-2373"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">GMBS<span>.</span>CONSULTING</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<main role='main'>
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Data Science · Strategic Analytics · Complex Systems Modeling</div>
+    <h1>Your data has answers.<br>We help you find them.</h1>
+    <p class="hero-sub">Most organizations are drowning in data and starving for insight. GMBS Consulting bridges the gap between what your data contains and what your leadership can act on — with the rigor of federal research and the clarity of a trusted advisor.</p>
+    <a href="#contact" class="hero-cta">Start a Conversation</a>
+    <a href="#services" class="hero-cta-ghost">See How We Work</a>
+    <div class="hero-credentials">
+      <div class="cred"><div class="cred-val">PhD</div><div class="cred-label">Research Credentials</div></div>
+      <div class="cred"><div class="cred-val">EPA · NIH · NASA</div><div class="cred-label">Federal Agency Work</div></div>
+      <div class="cred"><div class="cred-val">20+</div><div class="cred-label">Years in Data Science</div></div>
+      <div class="cred"><div class="cred-val">Memphis, TN</div><div class="cred-label">Serving Clients Nationwide</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section id="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div>
+        <div class="section-label">The Problem We Solve</div>
+        <h2>Your analysts and your executives are speaking different languages.</h2>
+        <div class="gold-rule"></div>
+        <p>You have data. You have reports. You may even have dashboards. But somewhere between the SQL query and the boardroom, the insight gets lost — and decisions get made on instinct anyway.</p>
+        <p>This isn't a technology problem. It's a translation problem. And it's more common than most organizations want to admit.</p>
+        <p>GMBS Consulting exists at that intersection. We take the kind of rigorous analytical discipline developed in federal research environments — where the stakes of being wrong are measured in public health, not just quarterly earnings — and apply it to your most complex data challenges.</p>
+      </div>
+      <div>
+        <blockquote class="problem-quote">
+          <p>"The goal is not more data. The goal is better decisions. Those are not the same thing — and confusing them is expensive."</p>
+          <footer style="margin-top:1.5rem; font-family:sans-serif; font-size:.85rem; color:var(--mid);">— <cite>Gregory M. Blumenthal, PhD</cite><br>Principal, GMBS Consulting</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-label">How We Work</div>
+    <h2>Three ways to engage.</h2>
+    <div class="gold-rule"></div>
+    <p style="max-width:600px;">Every engagement starts with a conversation. If we're not the right fit, we'll tell you — and point you toward someone who is.</p>
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🔍</div>
+        <div class="service-tier">Tier 1 · Entry Point</div>
+        <h3>The Data Audit</h3>
+        <p>A structured assessment of your current data infrastructure, reporting practices, and how analytics actually inform decisions. Delivered in 2–3 weeks as a written findings report with prioritized recommendations.</p>
+        <ul>
+          <li>Data quality & pipeline review</li>
+          <li>Reporting gap analysis</li>
+          <li>Decision-making workflow assessment</li>
+          <li>Written findings + recommendations</li>
+        </ul>
+        <div class="service-price">Starting at $2,500 · Fixed scope</div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">⚙️</div>
+        <div class="service-tier">Tier 2 · Project Engagement</div>
+        <h3>The Analytics Build</h3>
+        <p>Full-scope data science projects designed around your specific challenge — from predictive model development and risk analysis frameworks to impact measurement systems and secure data architecture.</p>
+        <ul>
+          <li>Predictive & statistical modeling</li>
+          <li>Risk analysis & scenario modeling</li>
+          <li>Database design & optimization</li>
+          <li>Full-stack data application development</li>
+        </ul>
+        <div class="service-price">$10,000–$40,000 · Scoped per project</div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">🧭</div>
+        <div class="service-tier">Tier 3 · Ongoing Relationship</div>
+        <h3>Embedded Analyst</h3>
+        <p>A monthly advisory relationship that puts a senior data scientist in your corner — without the overhead of a full-time hire. Strategic guidance, QA on internal analytics work, and executive-level interpretation on demand.</p>
+        <ul>
+          <li>Monthly strategy sessions</li>
+          <li>On-call analytical review</li>
+          <li>Executive briefing support</li>
+          <li>Ongoing model refinement</li>
+        </ul>
+        <div class="service-price">$3,000–$6,000/month · 3-month minimum</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <img src="headshot.png" alt="Gregory M. Blumenthal, PhD — Principal, GMBS Consulting"
+             style="width:100%; border-radius:4px; display:block;">
+      </div>
+      <div>
+        <div class="section-label" style="color:var(--teal-light)">About</div>
+        <h2>Scientific rigor.<br>Strategic clarity.</h2>
+        <div class="gold-rule"></div>
+        <p>Gregory M. Blumenthal, PhD is the Principal of GMBS Consulting. His career began not in boardrooms, but in laboratories — building predictive models of how toxic substances move through biological systems, for agencies that couldn't afford to be wrong.</p>
+        <p>That work — developing PBPK models for the US EPA, contributing to projects for the NIH, VA, and NASA — instilled a discipline that most business analysts never acquire: the habit of interrogating your own assumptions before your results become decisions.</p>
+        <p>He now applies that same rigor to the data problems that matter to organizations in healthcare, cybersecurity, nonprofit strategy, and beyond. He is also the co-author of the annual <em>Memphis Poverty Fact Sheet</em>, a resource that uses demographic data to drive policy and community understanding of poverty in the Mid-South.</p>
+        <p>He is based in Memphis, TN, and works with clients nationally and internationally.</p>
+        <ul class="credential-list">
+          <li><span class="dot">◆</span> PhD, Toxicology &amp; Risk Assessment</li>
+          <li><span class="dot">◆</span> B.A. Chemistry, Vanderbilt University</li>
+          <li><span class="dot">◆</span> NASA Award Recipient, 2014</li>
+          <li><span class="dot">◆</span> Contributor: US EPA · NIH · VA · NASA</li>
+          <li><span class="dot">◆</span> Co-author, Memphis Poverty Fact Sheet</li>
+          <li><span class="dot">◆</span> Advisor, Security Tapestry &amp; remoting.work</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="work">
+  <div class="container">
+    <div class="section-label">Selected Work</div>
+    <h2>Problems we've helped solve.</h2>
+    <div class="gold-rule"></div>
+    <p style="max-width:600px; margin-bottom:0;">Details are anonymized to protect client confidentiality. These represent the kinds of engagements GMBS Consulting takes on.</p>
+    <div class="case-grid">
+
+      <article class="case-card">
+        <div class="case-tag">Cybersecurity · Strategic Analytics</div>
+        <h3>Translating Threat Data for the C-Suite</h3>
+        <p>An international cybersecurity firm had sophisticated threat detection capabilities but struggled to communicate risk levels to non-technical executive leadership and enterprise clients. Reporting was technically accurate but operationally useless.</p>
+        <p>GMBS redesigned the analytics framework to express threat data in business-impact terms — cost exposure, operational risk, and decision thresholds — rather than technical severity scores.</p>
+        <div class="case-result"><strong>Outcome:</strong> Executive team could independently triage alerts and make resource allocation decisions without analyst translation at every step.</div>
+      </article>
+
+      <article class="case-card">
+        <div class="case-tag">Nonprofit · Social Data Science</div>
+        <h3>Memphis Poverty Fact Sheet</h3>
+        <p>Co-authored an annual data resource that synthesizes census, economic, and demographic data to give policymakers, journalists, and community advocates a rigorous, accessible picture of poverty dynamics in Memphis and Shelby County.</p>
+        <p>The project requires not just analytical precision but the ability to communicate complex socioeconomic relationships to audiences with widely varying technical backgrounds.</p>
+        <div class="case-result"><strong>Outcome:</strong> Cited annually by local media, policy organizations, and grant-making foundations as a primary reference for regional poverty analysis.</div>
+        <a href="https://www.gmbs-consulting.com/mpfs/" target="_blank" rel="noopener" style="display:inline-block; margin-top:1rem; font-family:sans-serif; font-size:.85rem; color:var(--teal-light);">View the live dashboard →</a>
+      </article>
+
+      <article class="case-card">
+        <div class="case-tag">Federal Research · Risk Modeling</div>
+        <h3>PBPK Model Evaluation for the US EPA</h3>
+        <p>Developed objective criteria for evaluating Physiologically Based Pharmacokinetic models used in federal risk assessments — analytical tools that inform how regulators determine safe exposure thresholds for toxic substances.</p>
+        <p>The work required building evaluation frameworks that were both scientifically rigorous and practically applicable across a wide range of model types and chemical classes.</p>
+        <div class="case-result"><strong>Outcome:</strong> Contributed to EPA methodologies used in ongoing public health risk assessments nationwide.</div>
+      </article>
+
+      <article class="case-card">
+        <div class="case-tag">Platform Strategy · Data Architecture</div>
+        <h3>Analytics Infrastructure for a Remote Work Platform</h3>
+        <p>A growing remote work platform needed to understand user behavior patterns, retention risk, and feature adoption across a geographically distributed international user base — but had no systematic approach to collecting or interpreting that data.</p>
+        <p>GMBS designed and implemented the analytical infrastructure from the ground up, including data pipelines, retention modeling, and an executive dashboard that surfaced actionable signals.</p>
+        <div class="case-result"><strong>Outcome:</strong> Leadership team gained ongoing visibility into platform health metrics and could identify at-risk user segments before churn occurred.</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT / POVERTY FACT SHEET CALLOUT -->
+<section id="impact">
+  <div class="container">
+    <div class="impact-grid">
+      <div>
+        <div class="section-label" style="color:var(--teal-light)">Community Impact</div>
+        <h2>Data in service of people, not just profit.</h2>
+        <div class="gold-rule"></div>
+        <p>The <em>Memphis Poverty Fact Sheet</em> is an annual publication co-authored by Dr. Blumenthal that uses rigorous demographic and economic analysis to document poverty dynamics in the Memphis metro area.</p>
+        <p>It is used by policymakers, nonprofit organizations, journalists, and community advocates as a primary reference for understanding — and responding to — economic hardship in one of America's most economically challenged cities.</p>
+        <p>This work reflects a core belief at GMBS Consulting: that the same analytical discipline that serves corporations and federal agencies can and should serve communities.</p>
+        <a href="https://www.gmbs-consulting.com/mpfs/" target="_blank" rel="noopener" style="display:inline-block; margin-top:.5rem; font-family:sans-serif; font-size:.85rem; color:var(--teal-light);">View the live Fact Sheet dashboard →</a>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:2rem;">
+        <div class="impact-stat-block">
+          <div class="impact-stat">Annual</div>
+          <div class="impact-stat-label">Publication cycle</div>
+        </div>
+        <div class="impact-stat-block">
+          <div class="impact-stat">Policy</div>
+          <div class="impact-stat-label">Cited by legislators &amp; foundations</div>
+        </div>
+        <div class="impact-stat-block">
+          <div class="impact-stat">Open</div>
+          <div class="impact-stat-label">Publicly available resource</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Get In Touch</div>
+        <h2>Let's talk about your data.</h2>
+        <div class="gold-rule"></div>
+        <p>Every engagement starts with a conversation. Tell us what you're working with and what you're trying to accomplish — and we'll tell you honestly whether we're the right fit.</p>
+        <p class="contact-form-note">Typical response time: within one business day.</p>
+
+        <form action="https://formspree.io/f/xnjrgnyw" method="POST" style="margin-top:2rem">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="organization">Organization</label>
+            <input type="text" id="organization" name="organization" placeholder="Acme Corp / Memphis Community Foundation / etc.">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">What are you trying to solve?</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your data challenge or what kind of help you're looking for..."></textarea>
+          </div>
+          <!-- Honeypot spam filter -->
+          <input type="text" name="_gotcha" style="display:none">
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <div class="section-label">Direct Contact</div>
+        <h3 style="margin-top:.5rem">Gregory M. Blumenthal, PhD</h3>
+        <p>Principal, GMBS Consulting<br>Memphis, Tennessee</p>
+        <h3>Email</h3>
+        <p><a href="mailto:greg@gmbs-consulting.com">greg@gmbs-consulting.com</a></p>
+        <h3>Website</h3>
+        <p><a href="https://www.gmbs-consulting.com">gmbs-consulting.com</a></p>
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/gm-blumenthal-scharf">linkedin.com/in/gm-blumenthal-scharf</a></p>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/GregMBS">github.com/GregMBS</a></p>
+        <h3>Research Profile</h3>
+        <p><a href="https://orcid.org/0009-0007-2130-2373">ORCID: 0009-0007-2130-2373</a></p>
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--light); border-radius:4px; border-left:3px solid var(--gold)">
+          <p style="font-size:.9rem; margin:0"><strong>Not sure if we're the right fit?</strong><br>That's exactly what the first conversation is for. There's no obligation — and if someone else can serve you better, we'll say so.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+  <div>© 2026 GMBS Consulting · Gregory M. Blumenthal, PhD · Memphis, TN</div>
+  <div style="display:flex; gap:1.5rem">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/gm-blumenthal-scharf">LinkedIn</a>
+    <a href="https://github.com/GregMBS">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
