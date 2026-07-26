@@ -71,3 +71,6 @@ build-iPhoneSimulator/
 
 # End of https://www.toptal.com/developers/gitignore/api/jekyll,ruby
 /.idea/
+
+# Local planning notes, not for version control
+/phase.md
