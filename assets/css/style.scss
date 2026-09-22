@@ -1,16 +1,13 @@
----
----
-
-@import "main.scss";
+// @import "main.scss";
 
 @font-face {
     font-family: 'Epilogue';
-    src: url('../fonts/Epilogue-VariableFont_wght.ttf')  format('truetype')
+    src: url('../fonts/Epilogue-VariableFont_wght.ttf')  format('truetype');
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-VariableFont_opsz.ttf')  format('truetype')
+    src: url('../fonts/Inter-VariableFont_opsz.ttf')  format('truetype');
 }
 
 body {
@@ -34,16 +31,16 @@ body {
 
 a.navbar-item:hover,
 .navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
     color: white !important;
 }
 
 a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    background-color: rgba(255, 255, 255, 0.25) !important;
     color: white !important;
 
     &:hover {
-        background-color: rgba($color: #fff, $alpha: 0.25) !important;
+        background-color: rgba(255, 255, 255, 0.25) !important;
         color: grey;
     }
 }
@@ -77,7 +74,7 @@ a.navbar-item.is-active {
     }
 }
 .title {
-    margin: auto 0.75rem!important;
+    margin: auto 0.75rem !important;
 }
 .subtitle {
     letter-spacing: 0.25rem;
@@ -118,7 +115,7 @@ a.navbar-item.is-active {
 
         &:hover {
             transform: scale(1.10);
-            filter: opacity(0.75);
+            opacity: 0.75;
         }
     }
 
@@ -260,7 +257,7 @@ a.navbar-item.is-active {
                 justify-content: center;
                 margin: auto;
                 transition: all 0.25s ease;
-                &:hover{
+                &:hover {
                     transform: scale(1.15);
                 }
             }
@@ -306,7 +303,7 @@ a.navbar-item.is-active {
     .card {
         transition: all 0.25s ease;
         &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.90)!important;
+            background-color: rgba(0, 0, 0, 0.90) !important;
         }
     }
 }
@@ -342,7 +339,7 @@ a.navbar-item.is-active {
         ol, ul, blockquote {
             display: inline-block;
         }
-        hr{
+        hr {
             background-color: grey;
         }
         img, iframe {
@@ -382,24 +379,24 @@ a.navbar-item.is-active {
 }
 
 .service-section h2 {
-    font-size-adjust: 1.5;
+    font-size: 1.5rem;
     margin: 1em;
 }
 
 .service-section h3 {
-    font-size-adjust: 1.25;
+    font-size: 1.25rem;
 }
 
 .service-section p {
-    margin: 1em
+    margin: 1em;
 }
 
 .service-section dl * {
-    margin: 1em
+    margin: 1em;
 }
 
 .service-section dt {
-    font-size-adjust: 0.6;
+    font-size: 0.6rem;
     font-weight: 800;
     margin: 1em;
 }
